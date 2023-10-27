@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/distance_tracker_nav_graph"
+    app:startDestination="@id/ScanWifiDevicesFragment">
+    <fragment
+        android:id="@+id/ScanWifiDevicesFragment"
+        android:name="com.distance.tracker.DistanceTracker.ScanWifiDevices.ScanWifiDevicesFragment"
+        android:label="@string/scan_wifi_devices_fragment_label"
+        tools:layout="@layout/fragment_scan_wifi_devices">
+        <action
+            android:id="@+id/action_ScanWifiDevicesFragment_to_WifiDeviceDetailFragment"
+            app:destination="@id/WifiDeviceDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/WifiDeviceDetailFragment"
+        android:name="com.distance.tracker.DistanceTracker.WifiDeviceDetails.WifiDeviceDetailFragment"
+        android:label="@string/wifi_device_detail_fragment_label"
+        tools:layout="@layout/fragment_wifi_device_detail">
+        <action
+            android:id="@+id/action_WifiDeviceDetailFragment_to_ScanWifiDevicesFragment"
+            app:destination="@id/ScanWifiDevicesFragment" />
+        <argument
+            android:name="wifiDevice"
+            app:argType="com.distance.tracker.DistanceTracker.Model.WifiDevice" />
+    </fragment>
+</navigation>

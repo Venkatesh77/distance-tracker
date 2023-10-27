@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">DistanceTracker</string>
+    <string name="distance_tracker">Distance Tracker</string>
+    <string name="notes">Notes</string>
+    <string name="title_activity_distance_tracker">DistanceTrackerActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="scan_wifi_devices_fragment_label">Scan Wifi Devices Fragment</string>
+    <string name="wifi_device_detail_fragment_label">Wifi Device Detail Fragment</string>
+    <string name="list_notes_fragment_label">List Notes Fragment</string>
+    <string name="add_or_update_note_fragment_label">Add or Update Note Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="error">Oops, something went wrong</string>
+    <string name="add_notes_empty_text">Please enter any note to save</string>
+
+    <string name="task">Task</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="save">Save</string>
+    <string name="wifi_devices">Wifi Devices</string>
+    <string name="distance">Distance</string>
+    <string name="device_name">Device name</string>
+    <string name="mac_address">mac address</string>
+    <string name="note_added">Note is added successfully</string>
+    <string name="note_updated">Note is updated successfully</string>
+    <string name="wifi_device_detail">Wifi Device Detail</string>
+    <string name="distance_from_network">Distance from network</string>
+    <string name="device_doesn_t_support_rtt">Device doesn\'t support RTT</string>
+    <string name="add_notes">Add Notes</string>
+    <string name="update_notes">Update Notes</string>
+</resources>

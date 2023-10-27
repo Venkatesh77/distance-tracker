@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "286876940640",
+    "project_id": "distancetracker-f4e2d",
+    "storage_bucket": "distancetracker-f4e2d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:286876940640:android:e33b6fdcfd65cca36a8605",
+        "android_client_info": {
+          "package_name": "com.distance.tracker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAW0xuEBrgQRa1iDnlNPnLQeJoiveKyuUE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

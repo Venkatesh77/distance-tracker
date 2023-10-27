@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/ListNotesFragment">
+
+    <fragment
+        android:id="@+id/ListNotesFragment"
+        android:name="com.distance.tracker.Notes.ListNotes.ListNotesFragment"
+        android:label="@string/list_notes_fragment_label"
+        tools:layout="@layout/fragment_scan_wifi_devices">
+
+        <action
+            android:id="@+id/action_ListFragment_to_AddOrUpdateNoteFragment"
+            app:destination="@id/AddOrUpdateNotesFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/AddOrUpdateNotesFragment"
+        android:name="com.distance.tracker.Notes.AddNotes.AddOrUpdateNotesFragment"
+        android:label="@string/add_or_update_note_fragment_label"
+        tools:layout="@layout/fragment_add_or_update_notes">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/ListNotesFragment" />
+        <argument
+            android:name="note"
+            app:nullable="true"
+            app:argType="com.distance.tracker.Notes.Model.Note" />
+    </fragment>
+</navigation>
